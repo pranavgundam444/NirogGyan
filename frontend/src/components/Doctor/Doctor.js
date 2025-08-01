@@ -9,7 +9,7 @@ const Doctor = () => {
     const [submitted, setSubmitted] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/doctors`)
+        fetch(`https://niroggyan-backend-42v7.onrender.com/doctors`)
             .then(response => response.json())
             .then(data => {
                 const found = data.find(d => d.id === Number(id));
