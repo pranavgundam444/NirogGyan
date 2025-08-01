@@ -20,7 +20,7 @@ const Doctor = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:5000/appointments`, {
+            const response = await fetch(`https://niroggyan-backend-42v7.onrender.com/appointments`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
