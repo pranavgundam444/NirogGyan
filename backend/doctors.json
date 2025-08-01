@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Dr. John Doe",
+        "specialization": "Cardiology",
+        "contact": "123-456-7890",
+        "available": true,
+        "description": "Expert in heart related treatements and surgeries."
+    },
+    {
+        "id": 2,
+        "name": "Dr. Jane Smith",
+        "specialization": "Neurology",
+        "contact": "987-654-3210",
+        "available": true,
+        "description": "Specializes in brain and nervous system disorders."
+    },
+    {
+        "id": 3,
+        "name": "Dr. Emily Johnson",
+        "specialization": "Pediatrics",
+        "contact": "555-123-4567",
+        "available": false,
+        "description": "Cares for children's health from birth to adolescence."
+    }
+]
