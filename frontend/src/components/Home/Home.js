@@ -7,7 +7,7 @@ const Home = () => {
     const [search, setSearch] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/doctors')
+        fetch('https://niroggyan-backend-42v7.onrender.com/doctors')
             .then(response => response.json())
             .then(data => setDoctors(data))
     },[]);
