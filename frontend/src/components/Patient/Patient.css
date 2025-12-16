@@ -1,0 +1,43 @@
+.profile-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  object-fit: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 10px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.success-msg {
+  color: green;
+  font-weight: bold;
+}
+
+button {
+  background-color: blue;
+  text-decoration: none;
+}

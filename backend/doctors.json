@@ -1,0 +1,135 @@
+{
+  "doctors": [
+    {
+      "id": 1,
+      "email": "maya@gmail.com",
+      "password": "123",
+      "name": "Dr. Maya Rao",
+      "specialization": "Cardiologist",
+      "image": "/images/doctor1.jpg",
+      "available": true,
+      "description": "Expert in heart-related treatments.",
+      "role": "Doctor"
+    },
+    {
+      "id": 2,
+      "email": "aamir@gmail.com",
+      "password": "123",
+      "name": "Dr. Aamir Khan",
+      "specialization": "Dermatologist",
+      "image": "/images/doctor2.jpg",
+      "available": true,
+      "description": "Skin specialist with 10+ years of experience.",
+      "role": "Doctor"
+    },
+    {
+      "id": 3,
+      "email": "samram@gmail.com",
+      "password": "123",
+      "name": "Dr. Samram",
+      "specialization": "Dermatologist",
+      "image": "/images/doctor2.jpg",
+      "available": false,
+      "description": "Skin specialist with 10+ years of experience.",
+      "role": "Doctor"
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "email": "john@gmail.com",
+      "password": "123",
+      "name": "John Doe",
+      "age": 32,
+      "gender": "Male",
+      "phone": "9876543210",
+      "role": "Patient"
+    },
+    {
+      "id": 2,
+      "email": "sneha@gmail.com",
+      "password": "123",
+      "name": "Sneha Kapoor",
+      "age": 27,
+      "gender": "Female",
+      "phone": "8765432109",
+      "role": "Patient"
+    },
+    {
+      "id": 3,
+      "email": "arjun@gmail.com",
+      "password": "123",
+      "name": "Arjun Mehta",
+      "age": 40,
+      "gender": "Male",
+      "phone": "7654321098",
+      "role": "Patient"
+    },
+    {
+      "id": "22337470-cec3-48aa-a0ed-f87b76342201",
+      "email": "pranav@gmail.com",
+      "password": "123",
+      "createdAt": "2025-12-16T10:01:28.509Z"
+    },
+    {
+      "id": "33caedea-5e15-440d-86a6-1e3ea2ab3b2c",
+      "email": "Pranav@gmail.com",
+      "password": "123",
+      "createdAt": "2025-12-16T10:01:43.699Z"
+    },
+    {
+      "id": "a33a5859-2aee-447a-bbdd-ce4fea1c9343",
+      "name": "Sarkaar",
+      "email": "sarkaar@gmail.com",
+      "password": "123",
+      "createdAt": "2025-12-16T10:13:53.763Z"
+    },
+    {
+      "id": "5554d5c9-01fe-42cd-b6bd-2b5bec98671f",
+      "name": "Sarkaar",
+      "email": "Sarkaar@gmail.com",
+      "password": "123",
+      "createdAt": "2025-12-16T10:16:25.005Z"
+    },
+    {
+      "id": "127e3f27-be5a-4c4f-8330-eafbd95aef84",
+      "name": "sameer",
+      "email": "sameer@gmail.com",
+      "password": "123",
+      "role": "Patient",
+      "createdAt": "2025-12-16T10:21:02.011Z"
+    },
+    {
+      "id": "3e0fbdf5-bd57-4195-8b4f-9ddc0b36160d",
+      "name": "rakesh",
+      "email": "rakesh@gmail.com",
+      "password": "123",
+      "role": "Patient",
+      "createdAt": "2025-12-16T14:58:28.474Z"
+    },
+    {
+      "id": "c0f4f71a-30b2-4efe-9fff-6cfea59d56c0",
+      "name": "Raju",
+      "email": "raju@gmail.com",
+      "password": "123",
+      "role": "Patient",
+      "createdAt": "2025-12-16T15:02:37.229Z"
+    },
+    {
+      "id": "c4704cdd-d09e-43e6-b43f-7a690c7ccc50",
+      "name": "chintu",
+      "email": "chintu@gmail.com",
+      "password": "123",
+      "role": "Patient",
+      "createdAt": "2025-12-16T15:12:21.263Z"
+    },
+    {
+      "id": "1d31109d-d9b6-4507-bf86-ae298f0a988d",
+      "name": "chandu",
+      "email": "chandu@gmail.com",
+      "password": "123",
+      "role": "Patient",
+      "createdAt": "2025-12-16T15:13:21.016Z"
+    }
+  ]
+}
