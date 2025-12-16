@@ -11,7 +11,7 @@ function DoctorProfile() {
   const [appointments, setAppointments] = useState('')
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/doctors')
+    fetch('https://niroggyan-backend-42v7.onrender.com/api/doctors')
       .then(res => res.json())
       .then(data => {
         const found = data.find(d => d.id === Number(id));
@@ -26,7 +26,7 @@ function DoctorProfile() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:5000/api/appointments', {
+    fetch('https://niroggyan-backend-42v7.onrender.com/api/appointments', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...form, doctorId: Number(id) })
