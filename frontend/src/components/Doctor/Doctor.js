@@ -22,7 +22,7 @@ const Doctor = ({logged}) => {
    useEffect(() => {
   const id = Cookies.get("id")
 
-  fetch(`http://localhost:5000/api/appointments/${id}`)
+  fetch(`https://niroggyan-backend-42v7.onrender.com/api/appointments/${id}`)
     .then(res => res.json())
     .then(data => setAppointments(data))
 
