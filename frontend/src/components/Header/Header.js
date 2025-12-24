@@ -28,7 +28,7 @@ const Header = ({logged}) => {
             </NavLink>
             
             <NavLink className='text-decoration-none d-flex flex-row justify-content-center align-items-center gap-5'>
-                <li className='text-dark'>
+                <li className='text-dark viewD'>
                   <Link to='/patient' className='text-decoration-none text-dark'>
                     View Doctors
                   </Link>
@@ -51,6 +51,14 @@ const Header = ({logged}) => {
                     <li><hr className="dropdown-divider" /></li>
                     <li>
                       <button className="dropdown-item">Settings</button>
+                    </li>
+                    <li><hr className="dropdown-divider" /></li>
+                    <li>
+                      <Link to='/patient' className='text-decoration-none text-dark'>
+                        <button className="dropdown-item">
+                        View Doctors
+                      </button>
+                      </Link>
                     </li>
                     <li><hr className="dropdown-divider" /></li>
                     <li>

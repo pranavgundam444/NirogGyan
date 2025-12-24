@@ -1,214 +1,360 @@
-    /* .main {
+        .main {
+            display: flex;
+            flex-direction: column;
+        } 
+        
+        .bodyy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(to right, rgb(186, 189, 235), white, beige );
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .first {
+            background: linear-gradient(270deg, #ff9a9e, #fad0c4);
+            padding: 20px;
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .img-cardiolo {
+            height: 300px;
+            border-radius: 20px;
+            pointer-events: none;
+        }
+
+        .menu-btn {
+            display: none;
+            background: none;
+            font-size: 24px;
+            border: none;
+        }
+
+        .cards {
+            height: 200px;
+            width: 250px;
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+
+        .bd1 {
+            width: 100%;
+            align-items: center;
+            margin-bottom: 20%;
+        }
+
+        
+        .bd3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10%;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease-out;
+            padding: 20px;
+        }
+        
+        .comment-box {
+            width: 90vw;
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .input-box {
+            width: 90vw;
+        }
+        
+
+        .card {
+            margin-top: 20px;
+            height: 100px;
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        .bd2 {
+            width: 78%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10%;
+            z-index: -1;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease-out;
+        }
+
+        .bd2.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        @media screen and (max-width: 767px) {
+            .bodyy {
+                width: 100%;
+            }
+            .menu-btn {
+                display: visible;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .first {
+                height: 80vh;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .img-cardiolo {
+                max-width: 80%;
+                height: auto;
+            }
+
+            .text-content {
+                align-items: center;
+            }
+            .cards {
+                height: 300px;
+                width: 200px;
+                padding: 10px;
+                margin-bottom: 50px;
+                border: 1px solid #000;
+            }
+
+            .cards h1 {
+                color: rgb(125, 3, 64);
+            }
+
+            .bd3 {
+                width: 100vw;
+            }
+            .second {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .bd1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .card {
+                height: 17vh;
+                width: 40%;
+            }
+        }
+        
+
+        @media screen and (min-width: 1024px) {
+            .header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px;
+                background: linear-gradient(to right, rgb(186, 189, 235), white, beige );
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                }
+            .nav-links {
+                display: flex;
+                gap: 20px;
+                list-style-type: none;
+            }
+
+        }
+
+
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .doctor-scroll {
+            position: fixed;
+            top: 120px;
+            width: 380px;
+            z-index: 999;
+            pointer-events: none;
+            transition: transform 0.3s ease-out;
+            transform-origin: center center;
+            will-change: transform;
+        }
+
+
+
+        .bd3.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .bd1,
+        .bd2,
+        .bd3 {
+        scroll-margin-top: 250px; /* height of your navbar */
+        }
+
+
+
+
+        .circle-icon {
+        width: 30px;
+        height: 30px;
+        border: 1px black solid;
+        border-radius: 50%;
+        background: #fff;
+        color: black;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        background-size: cover;
-    } */
-
-    .main {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-    }
-
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px;
-        background: linear-gradient(to right, rgb(186, 189, 235), white, beige );
-        position: sticky;
-        top: 0;
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .bodyy {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        margin-top: 70px;
-    }
-
-    .bd1 {
-        width: 78%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-        margin-bottom: 40%;
-    }
-
-    .bd2 {
-        width: 78%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        gap: 20px;
-        margin-bottom: 10%;
-    }
-
-    .bd3{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 10%;
-    }
-
-    .cards {
-        height: 200px;
-        width: 350px;
-        padding: 10px;
-        gap: 30px;
-        margin-bottom: 50px;
-    }
-
-    .circle-icon {
-    width: 30px;
-    height: 30px;
-    border: 1px black solid;
-    border-radius: 50%;
-    background: #fff;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-   }
-
-   .sqare {
-    width: 30px;
-    height: 30px;
-    background: beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-
-   .sqares {
-    width: 30px;
-    height: 30px;
-    background: rgb(186, 189, 235);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-
-
-   .sqared {
-    width: 30px;
-    height: 30px;
-    background: rgb(194, 195, 213);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-
-
-
-    .img-cardiolo {
-        height: 300px;
-        border-radius: 20px;
-    }
-
-    .btn {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 30px;
-        padding: 20px;
-    }
-
-    .apt-button {
-        height: 45px;
-        width: 210px;
-        border-radius: 30px;
-        background-color: blue;
-        border: 0;
-        margin-top: 10px;
-    }
-
-    .heading {
-        font-family: 'Georgia';
-    }
-
-    .para {
-        font-family: 'Times';
-    }
-
-    .container {
-        padding: 10px;
-        height: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 13px;
-        width: 30%;
-        background-size: cover;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    input {
-        height: 33px;
-        width: 27vw;
-        margin-bottom: 3px;
-    }
-
-    .con {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 13px;
-        margin: 10px;
-        margin-top: 0px;
-        gap: 10px;
-    }
-    button {
-        border-radius: 7px;
-        height: 33px;
-        width: 90px;
         cursor: pointer;
-        background-color: green;
-        color: white;
-    }
-    h2 {
-        font-size: 24px;
     }
 
-    .login {
-        width: 27vw;
-        background-color: rgb(126, 135, 239);
-        border-radius: 0px;
-        border-color: transparent;
+    .sqare {
+        width: 30px;
+        height: 30px;
+        background: beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sqares {
+        width: 30px;
+        height: 30px;
+        background: rgb(186, 189, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
-    .font {
-        font-size: 20px;
-        margin-bottom: 0px;
+    .sqared {
+        width: 30px;
+        height: 30px;
+        background: rgb(194, 195, 213);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .logo {
-        font-size: 30px;
-    }
-    .cred {
-        font-size: 35px;
-        font-family: Times;
-    }
 
-    .credentials {
-        font-weight: 400;
-    }
+
+
+
+        .btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        .apt-button {
+            height: 45px;
+            width: 210px;
+            border-radius: 30px;
+            background-color: blue;
+            border: 0;
+            margin-top: 10px;
+        }
+
+        .heading {
+            font-family: 'Georgia';
+            z-index: 1;
+        }
+
+        .para {
+            font-family: 'Times';
+        }
+
+        input {
+            height: 33px;
+            width: 27vw;
+            margin-bottom: 3px;
+        }
+
+        .con {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 13px;
+            margin: 10px;
+            margin-top: 0px;
+            gap: 10px;
+        }
+        button {
+            border-radius: 7px;
+            height: 33px;
+            width: 90px;
+            cursor: pointer;
+            background-color: green;
+            color: white;
+        }
+        h2 {
+            font-size: 24px;
+        }
+
+        .login {
+            width: 27vw;
+            background-color: rgb(126, 135, 239);
+            border-radius: 0px;
+            border-color: transparent;
+        }
+
+
+        .font {
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+
+        .logo {
+            font-size: 30px;
+        }
+        .cred {
+            font-size: 35px;
+            font-family: Times;
+        }
+
+        .credentials {
+            font-weight: 400;
+        }

@@ -10,6 +10,9 @@
   width: 90%;
 
 }
+.firstbook {
+  display: block;
+}
 
 .part1 {
   height: 58vh;
@@ -106,3 +109,86 @@
 .part2-doc {
   height: 400px;
 }
+
+@media screen and (max-width: 426px) {
+
+  .body {
+    width: 100%;
+  }
+
+  .part1 {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .doc {
+    width:250px;
+  }
+
+  .info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .book {
+    margin-left: 0;
+    display: none;
+  }
+
+  .BookingButton {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .profile-icon,
+  .profile-iconn {
+    width: 35px;
+    height: 35px;
+    margin-left: -10px;
+  }
+
+  .part2 .d-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .doctors {
+    margin-right: 0;
+  }
+
+  .profile-icons {
+    width: 60px;
+    height: 60px;
+  }
+  .firstbook {
+    display: inline;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .body {
+    width: 95%;
+  }
+
+  .part1 {
+    height: auto;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .doc {
+    height: 240px;
+  }
+
+
+
+  .BookingButton {
+    width: 240px;
+  }
+}
+

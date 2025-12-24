@@ -10,12 +10,15 @@
         <Header logged={logged}/>
         <div className='body'>
           <div className='part1'>
-            {/* <h2> Welcome to the Nirogya hospitals Where the healings take place</h2> */}
-            <img src="/images/docnirog.png" className='doc' alt="doctors" />
+
+              {/* <h1 className='mb-4 fs-0 firstBook'>Book appointment <br/> with Trusted Doctors</h1> */}
+              <img src="/images/docnirog.png" className='doc' alt="doctors" />
+
+
             <div className='info'>
               <h1 className='mb-4 fs-0 book'>Book appointment <br/> with Trusted Doctors</h1>
               
-              <div className='d-flex text-center gap-2'>
+              <div className='d-flex align-items-center text-center gap-2'>
                 <img 
                   src="/images/doc1.avif" 
                   alt="profile icon"

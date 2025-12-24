@@ -66,7 +66,7 @@ const Login = ({logged}) => {
 
   return (
     <div className='mainnn'>
-        <div className='d-flex flex-row gap-5'>
+        <div className='view'>
             <div className='illustration'>
                 <img src='/images/loginlogo.png' alt='login' className='loginimg'/>
             </div>

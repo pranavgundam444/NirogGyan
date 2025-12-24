@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Cookies from 'js-cookie'
 import { Link } from 'react-router-dom'
 
+import './Doctor.css'
+
 const Doctor = ({logged}) => {
 
   const [name, setName] = useState("")
@@ -37,7 +39,6 @@ const Doctor = ({logged}) => {
   <div className='maincontain'>
     <div className='gngn'>
       <h1 className='fs-5 text-capitalize doctor-name'>{name}</h1>
-      <Link className='apt'>View Your Appointments</Link>
       <button className='btn btn-danger p-1' onClick={handleLogout}>Logout</button>
     </div>
 
