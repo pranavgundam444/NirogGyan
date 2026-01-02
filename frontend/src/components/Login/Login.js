@@ -15,7 +15,7 @@ const Login = ({logged}) => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const userDetails = {email, password}
-        const url = 'http://localhost:5000/login'
+        const url = 'https://niroggyan-backend-42v7.onrender.com/login'
         const options = {
             method: 'POST',
             headers: {
@@ -49,7 +49,7 @@ const Login = ({logged}) => {
     const createAccount = async (e) => {
         e.preventDefault()
         const userDetails = {name, email, password}
-        const url = 'http://localhost:5000/create'
+        const url = 'https://niroggyan-backend-42v7.onrender.com/create'
 
         const options = {
             method: "POST",
