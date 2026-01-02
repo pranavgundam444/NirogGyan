@@ -122,6 +122,12 @@
                 display: visible;
             }
 
+            .reqButton {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
             .nav-links {
                 display: none;
             }
