@@ -92,7 +92,7 @@
                             <h1 className='heading'>We help patients <br/> live a healthy, <br /> longer life</h1>
                             <p className='para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed <br /> do eiusmod tempor incididunt ut labore et dolore magna aliqua <br/> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ? <br /></p>
                             
-                            <Link to="/login" className='text-decoration-none' style={{position: "relative", zIndex: 10}}>
+                            <Link to="/login" className='text-decoration-none reqButton'>
                                 <button className='apt-button'>Request an appointment</button>
                             </Link>
                         </div>
