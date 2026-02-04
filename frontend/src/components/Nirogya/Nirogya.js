@@ -87,7 +87,7 @@
             <div className='bodyy'>
                 <section className='bd1' id='home'>
                     <div className='first'>
-                        <div className='d-flex flex-column'>
+                        <div className='d-flex flex-column justify-content-center'>
                             
                             <h1 className='heading'>We help patients <br/> live a healthy, <br /> longer life</h1>
                             <p className='para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed <br /> do eiusmod tempor incididunt ut labore et dolore magna aliqua <br/> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ? <br /></p>

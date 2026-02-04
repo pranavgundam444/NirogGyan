@@ -80,13 +80,13 @@ const Login = ({logged}) => {
                         </div>
 
                         <h2 className='fontt'>USERNAME</h2>
-                        <input type='text' className='input' placeholder='Username' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                        <input data-cy="email" type='text' className='input' placeholder='Username' value={email} onChange={(e) => setEmail(e.target.value)}/>
                         <h2 className='fontt'>PASSWORD</h2>
-                        <input type='password' className='input' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+                        <input data-cy="password" type='password' className='input' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
                         {error && <p>{error}</p>}
                         <div className='d-flex flex-row justify-content-center'>
                             <div className='d-flex flex-column align-items-center'>
-                                <button className=' container-fluid mb-2 btn btn-primary' type='submit'>Login</button>
+                                <button  data-cy="loginBtn" className='container-fluid mb-2 btn btn-primary' type='submit'>Login</button>
                                 <button className='container-fluid btn rounded-pill createaccount' onClick={() => setHasAccount(prev => !prev)} >Create new account</button>
                                 
                             </div>
