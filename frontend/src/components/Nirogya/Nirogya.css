@@ -1,7 +1,8 @@
+
         .main {
             display: flex;
             flex-direction: column;
-        } 
+        }
         
         .bodyy {
             display: flex;
@@ -9,6 +10,11 @@
             justify-content: center;
             align-items: center;
         }
+        /* .nav-links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        } */
 
         .header {
             display: flex;
@@ -62,15 +68,23 @@
 
         
         .bd3{
+            background-image: url('/public/images/contactUs.png');
+            width: 100vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-bottom: 10%;
             opacity: 0;
             transform: translateY(40px);
             transition: all 0.8s ease-out;
             padding: 20px;
+        }
+
+
+        
+
+        .bd3-card {
+            width: 50vw;
         }
         
         .comment-box {
@@ -102,7 +116,7 @@
             align-items: center;
             gap: 10px;
             margin-bottom: 10%;
-            z-index: -1;
+            /* z-index: -1; */
             opacity: 0;
             transform: translateY(40px);
             transition: all 0.8s ease-out;

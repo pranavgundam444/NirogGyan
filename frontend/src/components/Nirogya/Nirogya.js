@@ -1,5 +1,8 @@
-    import React, { useEffect, useState } from 'react'
-    import { Link, NavLink } from 'react-router-dom'
+    import React, { useEffect, useState} from 'react'
+    import { motion, useMotionValue, useSpring } from "framer-motion";
+    import { Phone, MapPin, Mail } from "lucide-react";
+    import { Link } from 'react-router-dom'
+    
     import './Nirogya.css'
 
     const Nirogya = () => {
@@ -11,9 +14,44 @@
         const [animateBg, setAnimateBg] = useState(false);
         const [scrollY, setScrollY] = useState(0);
         const [menuOpen, setMenuOpen] = useState(false);
+        const [hover, setHover] = useState(false);
+
+  // Cursor follower
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+  const springConfig = { damping: 25, stiffness: 550 };
+  const sx = useSpring(mouseX, springConfig);
+  const sy = useSpring(mouseY, springConfig);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      mouseX.set(e.clientX - 24);
+      mouseY.set(e.clientY - 24);
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  // Hover detection
+  useEffect(() => {
+    const add = () => setHover(true);
+    const remove = () => setHover(false);
+
+    const elements = document.querySelectorAll("button,a");
+    elements.forEach((el) => {
+      el.addEventListener("mouseenter", add);
+      el.addEventListener("mouseleave", remove);
+    });
+
+    return () => {
+      elements.forEach((el) => {
+        el.removeEventListener("mouseenter", add);
+        el.removeEventListener("mouseleave", remove);
+      });
+    };
+  }, []);
 
 
-        
         const handleSubmit= () => {
             if(email && subject && message){
                 setSuccessfull(true)
@@ -65,6 +103,7 @@
 
     return (
         <div>
+            
             <div className="header">
             <a href="#home">
                 <img src="/images/logo.png" className="hsptl-logo" alt="nirogyan" />
@@ -72,10 +111,10 @@
 
             <button className="menu-btn">☰</button>
 
-            <ul className="nav-links text-decoration-none">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul className="nav-links align-items-center">
+                <li><a href="#home" className='text-decoration-none text-dark'>Home</a></li>
+                <li><a href="#services" className='text-decoration-none text-dark'>Services</a></li>
+                <li><a href="#contact" className='text-decoration-none text-dark'>Contact</a></li>
             </ul>
 
             <Link to="/login">
@@ -86,6 +125,29 @@
 
             <div className='bodyy'>
                 <section className='bd1' id='home'>
+                    <motion.div
+                        style={{
+                            x: sx,
+                            y: sy,
+                            position: "fixed",
+                            top: 0,
+                            left: 0,
+                            zIndex: 9999,
+                            pointerEvents: "none",
+                            border: "2px solid blue",
+                        }}
+                        animate={{
+                            width: hover ? 70 : 40,
+                            height: hover ? 70 : 40,
+                        }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 300,
+                            damping: 20,
+                        }}
+                    />
+
+
                     <div className='first'>
                         <div className='d-flex flex-column justify-content-center'>
                             
@@ -215,21 +277,83 @@
                     </div>
                     
                 </section>
-                <section className='bd3' id='contact' >
-                    <div className='d-flex flex-column justify-content-center align-items-center'>
-                        <h1>Contact Us</h1>
-                        <p className='mb-5'>Got a technical issue ? Want to send feedback about a feature ? Let us know.</p>
+                <section className='bd3 min-vh-100 d-flex justify-content-center align-items-center position-relative' id='contact'>
+
+                    <div className="d-flex rounded overflow-hidden" style={{width: "900px", height:"550px"}}>
+
+                        {/* LEFT SIDE */}
+                        <div style={{width:"100%"}}>
+                        <div className="bg-white p-5 text-white">
+                            <h1 className='text-dark fs-4 mb-3'>Get In Touch</h1>
+                            <p className='text-dark mb-4 w-50'>We'd love to hear from you. Send us a message and we’ll respond as soon as possible. </p>
+                            <div className='d-flex flex-row gap-4'>
+                                <div className='d-flex gap-2'>
+                                    <Mail className='text-danger'/>
+                                    <p className='text-dark ml-3'>Niroggyan@gmail.com</p> 
+                                </div>
+                                <div className='d-flex gap-2'>
+                                    <Phone className='text-danger' />
+                                    <p className='text-dark'>9808978687</p> 
+                                </div>
+                                <div className='d-flex gap-2'>
+                                    <MapPin className='text-danger' />
+                                    <p className='text-dark'>Malakpet</p> 
+                                </div>
+                            </div>
+                        </div>  
+
+                        <div className="bg-danger p-5">
+                            <h5 className='text-white mb-3'>About Us</h5>
+                            <p className='text-white mb-5'>Niroggyan is a hospital which has the success rate of 100%. </p>
+                            <div className='d-flex flex-row justify-content-between'>
+                                <p className='text-white'>Home</p>
+                                <p className='text-white'>Portfolio</p>
+                                <p className='text-white'>Services</p>
+                                <p className='text-white'>Team Member</p>
+                                <p className='text-white'>Client</p>
+                                <p className='text-white'>Contact</p>
+                            </div>
+                            
+                        </div>
+                        </div>
+
+
+                        {/* RIGHT SIDE (floating card) */}
+
+                        <div className="bg-white p-4 rounded shadow-lg position-absolute" style={{
+                            top: "40%",
+                            right: "22%",
+                            transform: "translateY(-50%)",
+                            width: "320px",
+                            zIndex: 5
+                        }}>
+                            <h5 className="mb-3">Say Something</h5>
+
+                            <input type='text'
+                            placeholder='Your Email'
+                            value={email}
+                            className='form-control mb-3'
+                            onChange={(e) => setEmail(e.target.value)}
+                            />
+
+                            <input type='text'
+                            placeholder='Subject'
+                            value={subject}
+                            className='form-control mb-3'
+                            onChange={(e) => setSubject(e.target.value)}
+                            />
+
+                            <textarea
+                            placeholder='Message'
+                            className='form-control mb-3'
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            />
+
+                            <button className="btn btn-danger w-100">SEND</button>
+                        </div>
+
                     </div>
-                    <div>
-                        <h2 className='credentials'>Your Email</h2>
-                        <input type='text' placeholder='example@gmail.com' value={email} className='input-box mb-4' onChange={(e) => setEmail(e.target.value)}/>
-                        <h2 className='credentials'>Subject</h2>
-                        <input type='text' placeholder='Let us know how we can help you' value={subject} className='input-box mb-4' onChange={(e) => setSubject(e.target.value)} />
-                        <h2 className='credentials'>Your Message</h2>
-                        <textarea className='comment-box' type='text' placeholder='Leave a comment' value={message} onChange={(e) => setMessage(e.target.value)} />
-                    </div>
-                    <button className='btn btn-primary' onClick={handleSubmit}>Submit</button>
-                    {successfull && <p>Feedback Submitted Successfully</p>}
                 </section>
             </div>
         </div>

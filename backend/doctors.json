@@ -11,28 +11,328 @@
       "description": "Expert in heart-related treatments.",
       "role": "Doctor"
     },
+    
     {
-      "id": 2,
-      "email": "aamir@gmail.com",
-      "password": "123",
-      "name": "Dr. Aamir Khan",
-      "specialization": "Dermatologist",
-      "image": "/images/doctor2.jpg",
-      "available": true,
-      "description": "Skin specialist with 10+ years of experience.",
-      "role": "Doctor"
-    },
-    {
-      "id": 3,
-      "email": "samram@gmail.com",
-      "password": "123",
-      "name": "Dr. Samram",
-      "specialization": "Dermatologist",
-      "image": "/images/doctor2.jpg",
-      "available": false,
-      "description": "Skin specialist with 10+ years of experience.",
-      "role": "Doctor"
-    }
+    "id": 2,
+    "email": "arjun.mehta2@gmail.com",
+    "password": "123",
+    "name": "Dr. Arjun Mehta",
+    "specialization": "Dermatologist",
+    "image": "/images/doctor2.jpg",
+    "available": false,
+    "description": "Skin and allergy specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 3,
+    "email": "neha.sharma3@gmail.com",
+    "password": "123",
+    "name": "Dr. Neha Sharma",
+    "specialization": "Pediatrician",
+    "image": "/images/doctor3.jpg",
+    "available": true,
+    "description": "Child healthcare expert.",
+    "role": "Doctor"
+  },
+  {
+    "id": 4,
+    "email": "rahul.verma4@gmail.com",
+    "password": "123",
+    "name": "Dr. Rahul Verma",
+    "specialization": "Orthopedic",
+    "image": "/images/doctor4.jpg",
+    "available": true,
+    "description": "Bone and joint specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 5,
+    "email": "anita.patel5@gmail.com",
+    "password": "123",
+    "name": "Dr. Anita Patel",
+    "specialization": "Gynecologist",
+    "image": "/images/doctor5.jpg",
+    "available": false,
+    "description": "Women’s health specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 6,
+    "email": "vikram.singh6@gmail.com",
+    "password": "123",
+    "name": "Dr. Vikram Singh",
+    "specialization": "Neurologist",
+    "image": "/images/doctor6.jpg",
+    "available": true,
+    "description": "Brain and nervous system expert.",
+    "role": "Doctor"
+  },
+  {
+    "id": 7,
+    "email": "pooja.nair7@gmail.com",
+    "password": "123",
+    "name": "Dr. Pooja Nair",
+    "specialization": "ENT",
+    "image": "/images/doctor7.jpg",
+    "available": true,
+    "description": "Ear, nose, and throat specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 8,
+    "email": "karan.kapoor8@gmail.com",
+    "password": "123",
+    "name": "Dr. Karan Kapoor",
+    "specialization": "Psychiatrist",
+    "image": "/images/doctor8.jpg",
+    "available": false,
+    "description": "Mental health specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 9,
+    "email": "sneha.iyer9@gmail.com",
+    "password": "123",
+    "name": "Dr. Sneha Iyer",
+    "specialization": "Ophthalmologist",
+    "image": "/images/doctor9.jpg",
+    "available": true,
+    "description": "Eye care expert.",
+    "role": "Doctor"
+  },
+  {
+    "id": 10,
+    "email": "rohit.das10@gmail.com",
+    "password": "123",
+    "name": "Dr. Rohit Das",
+    "specialization": "General Physician",
+    "image": "/images/doctor10.jpg",
+    "available": true,
+    "description": "Primary healthcare provider.",
+    "role": "Doctor"
+  },
+
+  {
+    "id": 11,
+    "email": "meera.reddy11@gmail.com",
+    "password": "123",
+    "name": "Dr. Meera Reddy",
+    "specialization": "Cardiologist",
+    "image": "/images/doctor11.jpg",
+    "available": false,
+    "description": "Heart disease specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 12,
+    "email": "aditya.jain12@gmail.com",
+    "password": "123",
+    "name": "Dr. Aditya Jain",
+    "specialization": "Dentist",
+    "image": "/images/doctor12.jpg",
+    "available": true,
+    "description": "Dental care expert.",
+    "role": "Doctor"
+  },
+  {
+    "id": 13,
+    "email": "kavita.gupta13@gmail.com",
+    "password": "123",
+    "name": "Dr. Kavita Gupta",
+    "specialization": "Gynecologist",
+    "image": "/images/doctor13.jpg",
+    "available": true,
+    "description": "Maternity and women’s care.",
+    "role": "Doctor"
+  },
+  {
+    "id": 14,
+    "email": "rakesh.kumar14@gmail.com",
+    "password": "123",
+    "name": "Dr. Rakesh Kumar",
+    "specialization": "Orthopedic",
+    "image": "/images/doctor14.jpg",
+    "available": false,
+    "description": "Joint replacement surgeon.",
+    "role": "Doctor"
+  },
+  {
+    "id": 15,
+    "email": "nisha.menon15@gmail.com",
+    "password": "123",
+    "name": "Dr. Nisha Menon",
+    "specialization": "Dermatologist",
+    "image": "/images/doctor15.jpg",
+    "available": true,
+    "description": "Cosmetic skin specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 16,
+    "email": "aman.shah16@gmail.com",
+    "password": "123",
+    "name": "Dr. Aman Shah",
+    "specialization": "Neurologist",
+    "image": "/images/doctor16.jpg",
+    "available": true,
+    "description": "Neuro disorder expert.",
+    "role": "Doctor"
+  },
+  {
+    "id": 17,
+    "email": "divya.pillai17@gmail.com",
+    "password": "123",
+    "name": "Dr. Divya Pillai",
+    "specialization": "Pediatrician",
+    "image": "/images/doctor17.jpg",
+    "available": false,
+    "description": "Infant care specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 18,
+    "email": "sanjay.mishra18@gmail.com",
+    "password": "123",
+    "name": "Dr. Sanjay Mishra",
+    "specialization": "General Physician",
+    "image": "/images/doctor18.jpg",
+    "available": true,
+    "description": "Family doctor.",
+    "role": "Doctor"
+  },
+  {
+    "id": 19,
+    "email": "priya.sen19@gmail.com",
+    "password": "123",
+    "name": "Dr. Priya Sen",
+    "specialization": "Psychiatrist",
+    "image": "/images/doctor19.jpg",
+    "available": true,
+    "description": "Therapy and counseling expert.",
+    "role": "Doctor"
+  },
+  {
+    "id": 20,
+    "email": "varun.bose20@gmail.com",
+    "password": "123",
+    "name": "Dr. Varun Bose",
+    "specialization": "ENT",
+    "image": "/images/doctor20.jpg",
+    "available": false,
+    "description": "Sinus and throat expert.",
+    "role": "Doctor"
+  },
+
+  {
+    "id": 21,
+    "email": "isha.arora21@gmail.com",
+    "password": "123",
+    "name": "Dr. Isha Arora",
+    "specialization": "Ophthalmologist",
+    "image": "/images/doctor21.jpg",
+    "available": true,
+    "description": "Vision care specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 22,
+    "email": "manoj.yadav22@gmail.com",
+    "password": "123",
+    "name": "Dr. Manoj Yadav",
+    "specialization": "Cardiologist",
+    "image": "/images/doctor22.jpg",
+    "available": true,
+    "description": "Cardiac surgeon.",
+    "role": "Doctor"
+  },
+  {
+    "id": 23,
+    "email": "ritu.saxena23@gmail.com",
+    "password": "123",
+    "name": "Dr. Ritu Saxena",
+    "specialization": "Dermatologist",
+    "image": "/images/doctor23.jpg",
+    "available": false,
+    "description": "Acne and skincare expert.",
+    "role": "Doctor"
+  },
+  {
+    "id": 24,
+    "email": "deepak.roy24@gmail.com",
+    "password": "123",
+    "name": "Dr. Deepak Roy",
+    "specialization": "Dentist",
+    "image": "/images/doctor24.jpg",
+    "available": true,
+    "description": "Oral surgeon.",
+    "role": "Doctor"
+  },
+  {
+    "id": 25,
+    "email": "ananya.ghosh25@gmail.com",
+    "password": "123",
+    "name": "Dr. Ananya Ghosh",
+    "specialization": "Gynecologist",
+    "image": "/images/doctor25.jpg",
+    "available": true,
+    "description": "Reproductive health expert.",
+    "role": "Doctor"
+  },
+  {
+    "id": 26,
+    "email": "raj.malhotra26@gmail.com",
+    "password": "123",
+    "name": "Dr. Raj Malhotra",
+    "specialization": "Orthopedic",
+    "image": "/images/doctor26.jpg",
+    "available": false,
+    "description": "Sports injury specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 27,
+    "email": "shreya.dutta27@gmail.com",
+    "password": "123",
+    "name": "Dr. Shreya Dutta",
+    "specialization": "Neurologist",
+    "image": "/images/doctor27.jpg",
+    "available": true,
+    "description": "Stroke specialist.",
+    "role": "Doctor"
+  },
+  {
+    "id": 28,
+    "email": "nikhil.patel28@gmail.com",
+    "password": "123",
+    "name": "Dr. Nikhil Patel",
+    "specialization": "General Physician",
+    "image": "/images/doctor28.jpg",
+    "available": true,
+    "description": "Chronic disease management.",
+    "role": "Doctor"
+  },
+  {
+    "id": 29,
+    "email": "tanya.khanna29@gmail.com",
+    "password": "123",
+    "name": "Dr. Tanya Khanna",
+    "specialization": "Psychiatrist",
+    "image": "/images/doctor29.jpg",
+    "available": false,
+    "description": "Anxiety and depression expert.",
+    "role": "Doctor"
+  },
+  {
+    "id": 30,
+    "email": "vivek.naidu30@gmail.com",
+    "password": "123",
+    "name": "Dr. Vivek Naidu",
+    "specialization": "ENT",
+    "image": "/images/doctor30.jpg",
+    "available": true,
+    "description": "Hearing specialist.",
+    "role": "Doctor"
+  }
   ],
   "patients": [
     {

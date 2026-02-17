@@ -1,10 +1,17 @@
 describe("Login testing", () => {
-    it("Logs in Successfully" , () => {
-        cy.visit("https://niroggyan-frontend.onrender.com")
-        cy.get('[data-cy="email"]').type("test@gmail.com");
-        cy.get('[data-cy="password"]').type("123456")
-        cy.get('[loginBtn]').click()
+  it("Logs in Successfully", () => {
 
-        cy.getCookie('jwt-token').should("exist")
-    })
+    cy.visit("http://localhost:3000/login")
+
+    cy.get('input[placeholder="Username"]')
+      .first()
+      .type("arjun@gmail.com")
+
+    cy.get('input[placeholder="Password"]')
+      .type("123")
+
+    cy.contains("Login").click()
+
+    cy.getCookie("token").should("exist")
+  })
 })
