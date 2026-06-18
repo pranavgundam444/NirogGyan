@@ -19,16 +19,12 @@ const writeData = (data) => {
 };
 
 
-
-
-
 app.use(express.json());
 app.use(cors());
 
 const SECRET_KEY = "This is my key"
 
 const appointments = [];
-
 
 app.post("/create", (req, res) => {
   const { name, email, password} = req.body;
@@ -85,6 +81,7 @@ app.post('/login', (req, res) => {
       { expiresIn: '1h' }
     );
 
+
     res.json({
       token,
       loggedIn: email,
@@ -101,8 +98,10 @@ app.post('/login', (req, res) => {
 app.post
 
 app.get('/api/doctors', (req, res) => {
-  res.json(doctors.doctors);
+  const data = readData();
+  res.json(data.doctors);
 });
+
 
 
 app.post('/api/appointments', (req, res) => {
