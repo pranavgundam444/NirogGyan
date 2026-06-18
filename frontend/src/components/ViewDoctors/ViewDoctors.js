@@ -11,7 +11,7 @@ function ViewDoctors({logged}) {
 
   useEffect(() => {
     const user = Cookies.get('name')
-    setName(user)
+    // setName(user)
     fetch('https://niroggyan-backend-42v7.onrender.com/api/doctors')
       .then(res => res.json())
       .then(data => setDoctors(data));

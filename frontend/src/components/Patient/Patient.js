@@ -8,7 +8,7 @@ function DoctorProfile() {
   const [doctor, setDoctor] = useState(null);
   const [form, setForm] = useState({ patientName: '', email: '', dateTime: '' });
   const [submitted, setSubmitted] = useState(false);
-  // const [appointments, setAppointments] = useState('')
+  const [appointments, setAppointments] = useState('')
 
   useEffect(() => {
     fetch('https://niroggyan-backend-42v7.onrender.com/api/doctors')
@@ -34,7 +34,7 @@ function DoctorProfile() {
       .then(res => res.json())
       .then(data => {
         const details = data.data
-        setAppointments(data.data)
+        // setAppointments(data.data)
         console.log(details)
         Cookies.set('appointments', JSON.stringify(data.data), {expires: 30})
       })
