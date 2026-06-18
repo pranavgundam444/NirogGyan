@@ -7,7 +7,7 @@ import './ViewDoctors.css';
 function ViewDoctors({logged}) {
   const [doctors, setDoctors] = useState([]);
   const [search, setSearch] = useState('');
-  const [name,setName] = useState('')
+  // const [name,setName] = useState('')
 
   useEffect(() => {
     const user = Cookies.get('name')

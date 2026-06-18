@@ -10,10 +10,6 @@
         const [email, setEmail] = useState('')
         const [subject, setSubject] = useState('')
         const [message, setMessage] = useState('')
-        const [successfull, setSuccessfull] = useState(false)
-        const [animateBg, setAnimateBg] = useState(false);
-        const [scrollY, setScrollY] = useState(0);
-        const [menuOpen, setMenuOpen] = useState(false);
         const [hover, setHover] = useState(false);
 
   // Cursor follower
@@ -52,15 +48,15 @@
   }, []);
 
 
-        const handleSubmit= () => {
-            if(email && subject && message){
-                setSuccessfull(true)
-                setEmail('')
-                setSubject('')
-                setMessage('')
-            }
+        // const handleSubmit= () => {
+        //     if(email && subject && message){
+        //         setSuccessfull(true)
+        //         setEmail('')
+        //         setSubject('')
+        //         setMessage('')
+        //     }
             
-        }
+        // }
 
         useEffect(() => {
             const onScroll = () => setScrollY(window.scrollY);

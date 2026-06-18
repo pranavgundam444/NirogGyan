@@ -8,7 +8,7 @@ function DoctorProfile() {
   const [doctor, setDoctor] = useState(null);
   const [form, setForm] = useState({ patientName: '', email: '', dateTime: '' });
   const [submitted, setSubmitted] = useState(false);
-  const [appointments, setAppointments] = useState('')
+  // const [appointments, setAppointments] = useState('')
 
   useEffect(() => {
     fetch('https://niroggyan-backend-42v7.onrender.com/api/doctors')
