@@ -26,7 +26,7 @@
     };
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+  }, [mouseX, mouseY]);
 
   // Hover detection
   useEffect(() => {
@@ -261,7 +261,7 @@
                                 <p>World class care for everyone. Our health system offers unmatched.expert health care. From the lab to the clinic</p>
                                 <div className='d-flex flex-row justify-content-between'>
                                         <div className="circle-icon">
-                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            <i className="fa fa-arrow-right" aria-hidden="true"></i>
                                         </div>
                                         <div className='sqares'>
                                             6

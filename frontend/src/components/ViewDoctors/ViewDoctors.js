@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Cookies from 'js-cookie'
+// import Cookies from 'js-cookie'
 import Header from '../Header/Header';
 import './ViewDoctors.css';
 
